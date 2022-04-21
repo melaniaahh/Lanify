@@ -1,13 +1,10 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import * as ROUTES from "./constants/routes";
 import './App.css';
 import NavigationBar from "./components/NavigationBar";
 import Hero from "./components/Hero";
+import SignUpForm from './components/SignUpForm';
 
 const App = () => {
   return (
@@ -15,17 +12,11 @@ const App = () => {
     <NavigationBar />
 
     <Switch>
-      <Route path='/profile'>
-        <h1>Welcome!</h1>
-      </Route>
-      <Route path='/'>
-        <div className='App'>
-          <Hero />
-        </div>
-      </Route>
+      <Route path={ROUTES.SIGN_UP} component={SignUpForm}/>
+      <Route path={ROUTES.HOME} component={Hero}/>
     </Switch>
   </Router>
   );
-}
+};
 
 export default App;
