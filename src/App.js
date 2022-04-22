@@ -5,6 +5,7 @@ import './App.css';
 import NavigationBar from "./components/NavigationBar";
 import Hero from "./components/Hero";
 import SignUpForm from './components/SignUpForm';
+import WebApp from './pages/WebApp/WebApp';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
     <Switch>
       <Route path={ROUTES.SIGN_UP} component={SignUpForm}/>
       <Route path={ROUTES.HOME} component={Hero}/>
+      <WebApp />
     </Switch>
   </Router>
   );
