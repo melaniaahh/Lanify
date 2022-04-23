@@ -11,9 +11,6 @@ const NavigationBar = () => {
             <Link to={ROUTES.HOME}>
               <li>Home</li>
             </Link>
-            <Link to={ROUTES.SIGN_UP}>
-              <li>Sign Up</li>
-            </Link>
           </ul>
         </nav>
       </header>
