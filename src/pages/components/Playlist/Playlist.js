@@ -12,7 +12,7 @@ useEffect(() => {
     }
 }, []);
 
-const getPlaylists = () => {
+const Playlist = () => {
     axios
         .get(PLAYLISTS_ENDPOINT, {
         headers: {
@@ -29,7 +29,7 @@ const getPlaylists = () => {
 
 return (
     <>
-    <button onClick={getPlaylists}>Get Playlists</button>
+    <button onClick={Playlist}>Get Playlists</button>
     {data?.items ? data.items.map((item) => <p>{item.name}</p>) : null}
     </>
     );
