@@ -14,6 +14,7 @@ const App = () => {
     <NavigationBar />
     <Switch>
       <Route path={ROUTES.HOME} component={Hero}/>
+      <WebApp />
     </Switch>
     <SpotifyAuth />
   </Router>
