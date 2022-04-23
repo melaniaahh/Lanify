@@ -4,7 +4,7 @@ import "./SpotifyAuth.css";
 
 const CLIENT_ID = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
 const SPOTIFY_AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
-const REDIRECT_URL = "http://localhost:3000/SpotifyAuth";
+const REDIRECT_URL = "https://lanify.vercel.app/SpotifyAuth";
 const SPACE_DELIMITER = "%20";
 const SCOPES = [
     "user-read-currently-playing",
