@@ -1,3 +1,4 @@
-import SignUpForm from "./SignUpForm";
+// Firebase sedang dalam pengembangan
+// import SignUpForm from "./SignUpForm";
 
-export default SignUpForm;
+// export default SignUpForm;
